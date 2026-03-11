@@ -14,7 +14,7 @@ TO INSTALL: Run the **BATCH file** (BUILD_ME_FIRST) on your computer and type "R
 
 ---
 
-**Notable Features**
+## **Notable Features**
 - Support for all emulators and platforms
 - Parental controls to allow usage with children and kids
 - Xbox/Playstation controller support (control the launcher via a controller)
