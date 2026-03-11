@@ -14,6 +14,10 @@ The app is built with **Electron** (main process + preload bridge) and a **vanil
 - Xbox/Playstation controller support (control the launcher via a controller)
 - UI Themes
 
+**Manage Platforms / Emulators**
+
+![Platform / Emulator Management](screenshots/manage-platforms.png)
+
 ---
 
 ## Installation
