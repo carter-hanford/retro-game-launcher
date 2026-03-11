@@ -85,68 +85,6 @@ Output is in `dist/` (installer) or use `npm run build-portable` for a single po
 
 ---
 
-## Usage
-
-### Folder structure
-
-```
-retro-launcher/
-├── src/
-│   ├── main.js           # Electron main process
-│   ├── preload.js        # Secure IPC bridge
-│   └── renderer/
-│       ├── index.html    # UI shell
-│       ├── style.css     # Styles + themes
-│       └── app.js        # UI logic
-├── artwork/              # Cover art (by platform)
-│   ├── PS1/
-│   ├── PS2/
-│   ├── PS3/
-│   ├── XBOX/
-│   └── XBOX360/
-├── assets/
-│   └── icon.ico          # App icon
-├── games.json            # Library + emulator paths (app-managed)
-├── BUILD_ME_FIRST.bat    # One-click build for .exe
-└── package.json
-```
-
-### First-time setup
-
-1. **Set emulator paths**  
-   Click **Manage Platforms** (or **⚙ Emulator Settings**) and browse to each emulator’s `.exe`.
-
-   | Console   | Example emulator        |
-   |----------|-------------------------|
-   | PS1      | DuckStation             |
-   | PS2      | PCSX2                   |
-   | PS3      | RPCS3                   |
-   | Xbox     | xemu                    |
-   | Xbox 360 | Xenia                   |
-
-2. **Add games**  
-   Click **+ Add Game** and fill in:
-   - **Title** — Display name
-   - **Console** — Platform
-   - **Game file** — Path to `.iso`, `.xex`, `EBOOT.BIN`, etc.
-   - **Artwork** — Cover image (JPG/PNG, ~600×800px). Stored under `artwork/<CONSOLE>/`.
-
-3. **Optional**  
-   Drop images into `artwork/PS1/`, `artwork/PS2/`, etc. When adding a game, matching the “artwork filename” to an existing file loads it automatically.
-
-### In the launcher
-
-| Action           | How                                      |
-|------------------|------------------------------------------|
-| Launch a game    | Click the card or right-click → Launch   |
-| Edit / Remove    | Right-click → Edit or Remove            |
-| Filter by console| Click a platform in the sidebar         |
-| Search           | Use the search bar (admin)               |
-| Grid / list      | Toggle in the top bar (admin)            |
-| Themes           | Sidebar → Themes                         |
-| Parental controls| Sidebar → Manage access (admin); PIN in modal |
-| Controller (basic user) | D-pad / sticks to navigate; A/X to select; B to back |
-
 ### Building the standalone .exe
 
 From the `retro-launcher` folder:
@@ -192,16 +130,6 @@ The app manages this file automatically. Manual edit is optional; structure look
 
 ---
 
-## Roadmap
-
-Possible future additions:
-
-- [ ] macOS and Linux builds (electron-builder targets).
-- [ ] Optional Steam/Indie integration (launch via Steam client).
-- [ ] Backup/restore of `games.json` and artwork.
-
----
-
 ## License
 
-Use and modify as you like. If you share a fork, a link back or credit is appreciated.
+Open-source. Use and modify as you like. If you share a fork, show me what you create with it!
