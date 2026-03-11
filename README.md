@@ -12,8 +12,6 @@ TO INSTALL: Run the **BATCH file** (BUILD_ME_FIRST) on your computer and type "R
 
 ![Launcher Interface](screenshots/launcher-interface.png)
 
----
-
 ## **Notable Features**
 - Support for all emulators and platforms
 - Parental controls to allow usage with children and kids
@@ -52,8 +50,6 @@ Choose from 3 distinct themes to switch up the UI!
 - OG360 *(based on Xbox360 menu colors)*
 
 ![Themes](screenshots/themes.png)
-
----
 
 ## Installation
 
