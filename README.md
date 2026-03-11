@@ -24,15 +24,18 @@ Click Add Game to open the game interace.
 - Choose the platform
 - Select the game file path (usually a .iso / disc image file) # ORGANIZE YOUR GAME LIBRARY TO MAKE THIS PART EASY
 - Select artwork (find these online and download them into 'retro-launcher-v3\retro-launcher\artwork\{PS1,PS2,PS3,XBOX,XBOX360}'
+- 
 ![Add Games](screenshots/retro-launcher-add-game.png)
 
 **Manage Platforms / Emulators**
 Add as many emulators / game launchers as you want! Emulators require a path to a .exe file to launch the game. Platforms such as steam just need the game executable that steam uses to launch the game!
+
 ![Platform / Emulator Management](screenshots/manage-platforms.png)
 
 **Parental Controls**
 The launcher comes with an admin-mode and basic-mode. In the admin mode, users can control which games / platforms are accessible to the basic user. This can be used to create a "console" for your kids with access to the games you want them to play.
 Add + Remove games via the Parental Controls interface. When in basic-mode, you cannot enter admin-mode without a password that is configurable here as well.
+
 ![Parental Controls](screenshots/parental-controls.png)
 
 **Themes**
@@ -40,6 +43,8 @@ Choose from 3 distinct themes to switch up the UI!
 - Default *(dark, cyan)*
 - Daytime Berry *(light, apricot)*
 - OG360 *(based on Xbox360 menu colors)*
+
+![Themes](screenshots/themes.png)
 
 ---
 
