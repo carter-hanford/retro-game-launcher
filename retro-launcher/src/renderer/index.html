@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RetroLauncher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Custom Titlebar -->
+<div class="titlebar" id="titlebar">
+  <div class="titlebar-logo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <polygon points="12,2 22,8 22,16 12,22 2,16 2,8" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+      <polygon points="12,6 18,9.5 18,14.5 12,18 6,14.5 6,9.5" fill="var(--accent)" opacity="0.2"/>
+      <circle cx="12" cy="12" r="2.5" fill="var(--accent)"/>
+    </svg>
+    <span>RETRO LAUNCHER</span>
+  </div>
+  <div class="titlebar-controls">
+    <button class="tb-btn" id="btn-minimize" title="Minimize">&#x2212;</button>
+    <button class="tb-btn" id="btn-maximize" title="Maximize">&#x25A1;</button>
+    <button class="tb-btn close" id="btn-close" title="Close">&#x2715;</button>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    <!-- Scrollable region only — footer stays pinned (no jump when gamepad scrolls nav) -->
+    <div class="sidebar-nav-scroll">
+    <button class="nav-item" data-filter="home" id="nav-home">
+      <span class="nav-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+      </span>
+      <span>Home</span>
+    </button>
+    <button class="nav-item active" data-filter="all">
+      <span class="nav-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+      </span>
+      <span>All Games</span>
+    </button>
+    <div class="nav-section-label admin-only" id="nav-section-parental">PARENTAL CONTROLS</div>
+    <button type="button" class="nav-item admin-only" id="btn-parental-controls">
+      <span class="nav-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="18" height="18" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.621 0a4.5 4.5 0 0 0-.62 2.245V19.5A2.25 2.25 0 0 0 8.508 21.75h6.984A2.25 2.25 0 0 0 17.75 19.5v-6.755a4.5 4.5 0 0 0-.621-2.245Z" />
+        </svg>
+      </span>
+      <span>Manage access</span>
+    </button>
+    <div class="nav-section-label">PLATFORMS</div>
+    <!-- Dynamic platform nav items injected here by JS -->
+    <div id="sidebar-platforms"></div>
+    </div>
+
+    <div class="sidebar-footer">
+      <button type="button" class="btn-settings" id="btn-user-mode" title="Switch who is using the launcher">
+        <span id="user-mode-label">Admin mode</span>
+      </button>
+      <button class="btn-add-game admin-only" id="btn-add-game">+ Add Game</button>
+      <button class="btn-settings admin-only" id="btn-manage-platforms">&#9881; Manage Platforms</button>
+      <button class="btn-settings" id="btn-themes">&#127912; Themes</button>
+    </div>
+  </nav>
+</div>
+
+<!-- Main Content -->
+<main class="main-content" id="main-content">
+  <div class="topbar">
+    <div class="search-wrap">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="text" id="search-input" class="search-input" placeholder="Search games…" />
+    </div>
+    <div class="view-toggle">
+      <button class="view-btn active" id="view-grid" title="Grid View">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <rect x="0" y="0" width="6" height="6" rx="1"/><rect x="10" y="0" width="6" height="6" rx="1"/>
+          <rect x="0" y="10" width="6" height="6" rx="1"/><rect x="10" y="10" width="6" height="6" rx="1"/>
+        </svg>
+      </button>
+      <button class="view-btn" id="view-list" title="List View">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <rect x="0" y="0" width="16" height="3" rx="1"/><rect x="0" y="6" width="16" height="3" rx="1"/>
+          <rect x="0" y="12" width="16" height="3" rx="1"/>
+        </svg>
+      </button>
+    </div>
+    <div class="games-per-line-wrap" title="Games per line">
+      <label for="games-per-line" class="games-per-line-label">Per line</label>
+      <input type="range" id="games-per-line" class="games-per-line-slider" min="1" max="8" value="4" />
+      <span class="games-per-line-value" id="games-per-line-value">4</span>
+    </div>
+    <div class="sort-wrap" title="Sort games">
+      <label for="game-sort" class="sort-label">Sort</label>
+      <select id="game-sort" class="sort-select" aria-label="Sort games">
+        <option value="title">A–Z</option>
+        <option value="playtime">Most played</option>
+      </select>
+    </div>
+    <div class="game-count" id="game-count">0 games</div>
+  </div>
+
+  <div class="home-panel" id="home-panel" style="display:none"></div>
+  <div class="games-container" id="games-container"></div>
+</main>
+
+<!-- ── Add / Edit Game Modal ───────────────────────────────── -->
+<div class="modal-overlay" id="modal-game" style="display:none">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modal-title">Add Game</h2>
+      <button class="modal-close" id="modal-game-close">&#x2715;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-artwork-section">
+        <div class="artwork-preview" id="artwork-preview">
+          <div class="artwork-placeholder"><span>🖼</span><span>No Artwork</span></div>
+        </div>
+        <button class="btn-secondary" id="btn-pick-art">Browse Artwork…</button>
+        <p class="hint">JPG / PNG recommended (600×800px)</p>
+      </div>
+      <div class="modal-fields">
+        <label>Game Title <span class="req">*</span></label>
+        <input type="text" id="field-title" placeholder="e.g. Gran Turismo 4" />
+
+        <label>Platform <span class="req">*</span></label>
+        <select id="field-console">
+          <option value="">— Select Platform —</option>
+        </select>
+
+        <label id="label-path">Game File Path <span class="req">*</span></label>
+        <div class="input-row">
+          <input type="text" id="field-path" placeholder="C:\Games\PS2\Gran Turismo 4.iso" />
+          <button class="btn-secondary small" id="btn-browse-game">Browse…</button>
+        </div>
+
+        <label>Extra Launch Arguments <span class="opt">(optional)</span></label>
+        <input type="text" id="field-args" placeholder="e.g. --no-gui" />
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-secondary" id="btn-modal-cancel">Cancel</button>
+      <button class="btn-primary" id="btn-modal-save">Save Game</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Manage Platforms Modal ──────────────────────────────── -->
+<div class="modal-overlay" id="modal-platforms" style="display:none">
+  <div class="modal modal-wide">
+    <div class="modal-header">
+      <h2>Manage Platforms</h2>
+      <button class="modal-close" id="modal-platforms-close">&#x2715;</button>
+    </div>
+    <div class="modal-body modal-body-settings">
+      <p class="settings-hint">
+        Add consoles, handhelds, or custom categories. <br/>
+        <strong style="color:var(--accent)">Direct launch</strong> platforms (like Indie Games) run the game file itself — no emulator needed.
+        <strong style="color:var(--text-secondary)">Emulated</strong> platforms pass the game file to an emulator exe.
+      </p>
+
+      <!-- Existing platform list -->
+      <div id="platform-list"></div>
+
+      <!-- Add new platform form -->
+      <div class="add-platform-form" id="add-platform-form">
+        <div class="add-platform-header">+ New Platform</div>
+        <div class="add-platform-fields">
+          <input type="text" id="new-plat-label" placeholder="Platform name (e.g. Nintendo DS)" maxlength="40" />
+          <div class="color-row">
+            <label>Color</label>
+            <input type="color" id="new-plat-color" value="#00d4ff" class="color-picker" />
+          </div>
+          <div class="type-row">
+            <label class="radio-label">
+              <input type="radio" name="new-plat-type" value="indirect" checked /> Emulated
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="new-plat-type" value="direct" /> Direct launch (Indie / PC)
+            </label>
+          </div>
+          <div id="new-plat-emu-row">
+            <label>Emulator Path</label>
+            <div class="input-row">
+              <input type="text" id="new-plat-emu" placeholder="Path to emulator .exe…" />
+              <button class="btn-secondary small" id="btn-browse-new-emu">Browse…</button>
+            </div>
+          </div>
+          <button class="btn-primary" id="btn-add-platform" style="margin-top:10px;width:100%">Add Platform</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary" id="btn-platforms-done">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Parental controls modal ──────────────────────────────── -->
+<div class="modal-overlay" id="modal-parental" style="display:none">
+  <div class="modal modal-parental">
+    <div class="modal-header">
+      <h2>Parental controls</h2>
+      <button class="modal-close" id="modal-parental-close">&#x2715;</button>
+    </div>
+    <div class="modal-body modal-body-parental">
+      <div class="parental-pin-section">
+        <label class="parental-pin-label" for="parental-pin-field">Admin password (required to return to admin)</label>
+        <div class="parental-pin-row">
+          <input type="text" id="parental-pin-field" class="parental-pin-input" placeholder="e.g. 1111" autocomplete="off" />
+          <button type="button" class="btn-primary small" id="btn-parental-save-pin">Save PIN</button>
+        </div>
+        <p class="parental-pin-hint">Change this PIN here. Default is <strong>1111</strong> until you save a new one. Stored in your library config.</p>
+        <span id="parental-pin-saved" class="parental-pin-saved" style="display:none">Saved.</span>
+      </div>
+      <p class="parental-hint">Drag games between columns, <strong>use checkboxes</strong> to select multiple, then move selected—or use <strong>Move all</strong>. Basic user only sees games in the left column.</p>
+      <div class="parental-drop-grid">
+        <div class="parental-drop-zone" id="parental-zone-visible" data-zone="visible">
+          <div class="parental-zone-title">Visible to basic user</div>
+          <div class="parental-zone-toolbar">
+            <button type="button" class="btn-secondary small" id="parental-select-all-visible">Select all</button>
+            <button type="button" class="btn-secondary small" id="parental-clear-visible">Clear</button>
+            <button type="button" class="btn-secondary small parental-btn-primary" id="parental-move-selected-hidden">Move selected →</button>
+            <button type="button" class="btn-secondary small" id="parental-move-all-hidden">Move all →</button>
+          </div>
+          <div class="parental-zone-list" id="parental-list-visible"></div>
+        </div>
+        <div class="parental-drop-zone parental-zone-hidden" id="parental-zone-hidden" data-zone="hidden">
+          <div class="parental-zone-title">Hidden from basic user</div>
+          <div class="parental-zone-toolbar">
+            <button type="button" class="btn-secondary small" id="parental-select-all-hidden">Select all</button>
+            <button type="button" class="btn-secondary small" id="parental-clear-hidden">Clear</button>
+            <button type="button" class="btn-secondary small parental-btn-primary" id="parental-move-selected-visible">← Move selected</button>
+            <button type="button" class="btn-secondary small" id="parental-move-all-visible">← Move all</button>
+          </div>
+          <div class="parental-zone-list" id="parental-list-hidden"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary" id="btn-parental-done">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Admin password (basic → admin) ───────────────────────── -->
+<div class="modal-overlay" id="modal-admin-password" style="display:none">
+  <div class="modal modal-admin-password">
+    <div class="modal-header">
+      <h2>Admin password</h2>
+      <button class="modal-close" id="modal-admin-password-close">&#x2715;</button>
+    </div>
+    <div class="modal-body modal-body-column">
+      <p class="themes-hint">Enter the admin PIN to unlock full access.</p>
+      <input type="password" id="admin-password-input" class="search-input" style="max-width:100%" placeholder="PIN" autocomplete="off" />
+      <p id="admin-password-error" class="parental-pin-error" style="display:none"></p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-secondary" id="btn-admin-password-cancel">Cancel</button>
+      <button class="btn-primary" id="btn-admin-password-submit">Unlock</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Themes modal ─────────────────────────────────────────── -->
+<div class="modal-overlay" id="modal-themes" style="display:none">
+  <div class="modal modal-themes">
+    <div class="modal-header">
+      <h2>Themes</h2>
+      <button class="modal-close" id="modal-themes-close">&#x2715;</button>
+    </div>
+    <div class="modal-body modal-body-themes">
+      <p class="themes-hint">Choose a color theme—applies to the whole app including parental controls when opened as admin. Your choice is saved for next launch.</p>
+      <div class="theme-list" id="theme-list">
+        <button type="button" class="theme-card" data-theme="" aria-pressed="false">
+          <span class="theme-card-swatches theme-swatches-default"></span>
+          <span class="theme-card-name">Default</span>
+          <span class="theme-card-desc">Cyan / dark cinematic</span>
+        </button>
+        <button type="button" class="theme-card" data-theme="daytime-berry" aria-pressed="false">
+          <span class="theme-card-swatches theme-swatches-daytime-berry"></span>
+          <span class="theme-card-name">Daytime Berry</span>
+          <span class="theme-card-desc">Apricot, cotton candy &amp; bordeaux</span>
+        </button>
+        <button type="button" class="theme-card" data-theme="og360" aria-pressed="false">
+          <span class="theme-card-swatches theme-swatches-og360"></span>
+          <span class="theme-card-name">OG360</span>
+          <span class="theme-card-desc">Xbox 360 blades &amp; Live green</span>
+        </button>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-primary" id="btn-themes-done">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Launch Overlay ──────────────────────────────────────── -->
+<div class="launch-overlay" id="launch-overlay" style="display:none">
+  <div class="launch-card">
+    <div class="launch-spinner"></div>
+    <div class="launch-title" id="launch-title">Launching…</div>
+    <div class="launch-sub" id="launch-sub"></div>
+  </div>
+</div>
+
+<!-- Context Menu -->
+<div class="ctx-menu" id="ctx-menu" style="display:none">
+  <button class="ctx-item" id="ctx-launch">▶ Launch</button>
+  <button class="ctx-item" id="ctx-edit">✎ Edit</button>
+  <div class="ctx-divider"></div>
+  <button class="ctx-item danger" id="ctx-delete">✕ Remove</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

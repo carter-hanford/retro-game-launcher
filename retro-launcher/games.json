@@ -1,0 +1,364 @@
+{
+  "games": [
+    {
+      "id": "mmifl67vdnu7",
+      "title": "Assassin's Creed IV - Black Flag",
+      "console": "PS3",
+      "path": "D:\\GAMES\\PS3\\Assassin's Creed IV - Black Flag (USA) (En,Fr,Es,Pt)\\Assassin's Creed IV - Black Flag (USA) (En,Fr,Es,Pt)\\PS3_GAME\\USRDIR\\EBOOT.BIN",
+      "args": "",
+      "artwork": "assassin_s_creed_iv___black_flag.webp"
+    },
+    {
+      "id": "mmifpi3336if",
+      "title": "Easy Delivery Co.",
+      "console": "INDIE",
+      "path": "D:\\GAMES\\INDIE GAMES\\EDCo_v1.1d\\EasyDeliveryCo_Demo.exe",
+      "args": "",
+      "artwork": "easy_delivery_co_.jpg"
+    },
+    {
+      "id": "mmifyfcyntol",
+      "title": "Rocket League",
+      "console": "STEAM_0d1",
+      "path": "D:\\SteamLibrary\\steamapps\\common\\rocketleague\\Binaries\\Win64\\RocketLeague.exe",
+      "args": "",
+      "artwork": "rocket_league.jpg"
+    },
+    {
+      "id": "mmijyrv2d5x2",
+      "title": "Saints Row 2",
+      "console": "XBOX360",
+      "path": "D:\\GAMES\\XBOX 360\\Saints Row 2 (USA, Europe) (En,Fr,De,Es,It,Nl,Sv,Da)\\Saints Row 2 (USA, Europe) (En,Fr,De,Es,It,Nl,Sv,Da).iso",
+      "args": "",
+      "artwork": "saints_row_2.jpg"
+    },
+    {
+      "id": "mmik0grt1z7m",
+      "title": "The Sly Trilogy",
+      "console": "PS3",
+      "path": "D:\\GAMES\\PS3\\sly trilogy\\Sly Collection, The (USA) (En,Fr,Es)\\Sly Collection, The (USA) (En,Fr,Es)\\PS3_GAME\\USRDIR\\EBOOT.BIN",
+      "args": "",
+      "artwork": "the_sly_trilogy.jpg",
+      "lastPlayedAt": 1773109009931,
+      "playTimeSeconds": 10
+    },
+    {
+      "id": "mmikggn2cc4i",
+      "title": "Skate 3",
+      "console": "PS3",
+      "path": "D:\\GAMES\\PS3\\Skate 3 (USA, Asia) (En,Fr,Es)\\PS3_GAME\\USRDIR\\EBOOT.BIN",
+      "args": "",
+      "artwork": "skate_3.jpg"
+    },
+    {
+      "id": "mmikhczmcsfd",
+      "title": "Sly 4: Thieves in Time",
+      "console": "PS3",
+      "path": "D:\\GAMES\\PS3\\Sly Cooper - Thieves in Time (USA) (En,Fr,Es,Pt)\\Sly Cooper - Thieves in Time (USA) (En,Fr,Es,Pt)\\PS3_GAME\\USRDIR\\EBOOT.BIN",
+      "args": "",
+      "artwork": "sly_4__thieves_in_time.jpg",
+      "lastPlayedAt": 1773113538427,
+      "playTimeSeconds": 14
+    },
+    {
+      "id": "mmikoj6t821g",
+      "title": "007 Nightfire",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\007 - Nightfire (USA).xiso.iso",
+      "args": "",
+      "artwork": "007_nightfire.jpg"
+    },
+    {
+      "id": "mmikoxpfgiam",
+      "title": "Blood Wake",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Blood Wake (USA).xiso.iso",
+      "args": "",
+      "artwork": "blood_wake.png"
+    },
+    {
+      "id": "mmikp73fv399",
+      "title": "Chicago Enforcer",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Chicago Enforcer (USA).xiso.iso",
+      "args": "",
+      "artwork": "chicago_enforcer.jpg"
+    },
+    {
+      "id": "mmikphdvpbx5",
+      "title": "Conflict Desert Storm",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Conflict - Desert Storm (USA).xiso.iso",
+      "args": "",
+      "artwork": "conflict_desert_storm.jpg"
+    },
+    {
+      "id": "mmikq3b4prhj",
+      "title": "Crash Bandicoot: The Wrath of Cortex",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Crash Bandicoot - The Wrath of Cortex (USA).xiso.iso",
+      "args": "",
+      "artwork": "crash_bandicoot__the_wrath_of_cortex.jpg"
+    },
+    {
+      "id": "mmikqhuamhpr",
+      "title": "Dave Mirra Freestyle BMX 2",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Dave Mirra Freestyle BMX 2 (USA).xiso.iso",
+      "args": "",
+      "artwork": "dave_mirra_freestyle_bmx_2.png"
+    },
+    {
+      "id": "mmikrd0vk4yo",
+      "title": "The Fairly Oddparents: Breakin Da' Rules",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Fairly OddParents, The - Breakin' da Rules (USA).xiso.iso",
+      "args": "",
+      "artwork": "the_fairly_oddparents__breakin_da__rules.jpg"
+    },
+    {
+      "id": "mmikrm5ler7f",
+      "title": "Fusion Frenzy",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Fuzion Frenzy (USA).xiso.iso",
+      "args": "",
+      "artwork": "fusion_frenzy.png"
+    },
+    {
+      "id": "mmiksd5k7wgj",
+      "title": "Jet Set Future Radio",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\JSRF - Jet Set Radio Future (USA).xiso.iso",
+      "args": "",
+      "artwork": "jet_set_future_radio.jpg"
+    },
+    {
+      "id": "mmiksv7to2m0",
+      "title": "The Lord Of The Rings: The Fellowship Of The Ring",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Lord of the Rings, The - The Fellowship of the Ring (USA).xiso.iso",
+      "args": "",
+      "artwork": "the_lord_of_the_rings__the_fellowship_of_the_ring.jpg"
+    },
+    {
+      "id": "mmikta8r2r1w",
+      "title": "The Lord Of The Rings: The Return Of The King",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Lord of the Rings, The - The Return of the King (USA).xiso.iso",
+      "args": "",
+      "artwork": "the_lord_of_the_rings__the_return_of_the_king.jpg"
+    },
+    {
+      "id": "mmiktnhlscge",
+      "title": "The Lord Of The Rings: The Two Towers",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Lord of the Rings, The - The Two Towers (USA).xiso.iso",
+      "args": "",
+      "artwork": "the_lord_of_the_rings__the_two_towers.webp"
+    },
+    {
+      "id": "mmiku0ne9slv",
+      "title": "Midnight Club Dub Edition: Remix",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Midnight Club 3 - DUB Edition Remix (USA).xiso.iso",
+      "args": "",
+      "artwork": "midnight_club_dub_edition_remix.jpg"
+    },
+    {
+      "id": "mmikuh5u4op9",
+      "title": "MVP Baseball 2005",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\MVP Baseball 2005 (USA).xiso.iso",
+      "args": "",
+      "artwork": "mvp_baseball_2005.jpg"
+    },
+    {
+      "id": "mmikurhg7m3b",
+      "title": "NBA Ballers",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\NBA Ballers (USA).xiso.iso",
+      "args": "",
+      "artwork": "nba_ballers.jpg"
+    },
+    {
+      "id": "mmikv3m1fvac",
+      "title": "Scooby Doo! Night of 100 Frights",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Scooby-Doo! Night of 100 Frights (USA).xiso.iso",
+      "args": "",
+      "artwork": "scooby_doo__night_of_100_frights.png"
+    },
+    {
+      "id": "mmikvmf55mbi",
+      "title": "Star Wars Knights of the Old Republic II: The Sith Lords",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Star Wars - Knights of the Old Republic II - The Sith Lords (USA).xiso.iso",
+      "args": "",
+      "artwork": "star_wars_knights_of_the_old_republic_ii__the_sith_lords.jpg"
+    },
+    {
+      "id": "mmikw0m9dsta",
+      "title": "Star Wars Knights of the Old Republic",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Star Wars - Knights of the Old Republic (USA) (Rev 1).xiso.iso",
+      "args": "",
+      "artwork": "star_wars_knights_of_the_old_republic.jpg"
+    },
+    {
+      "id": "mmikwizwee2j",
+      "title": "Tom Clancy's Ghost Recon Advanced Warfighter",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Tom Clancy's Ghost Recon - Advanced Warfighter (USA, Europe) (En,Fr,De,Es,It).xiso.iso",
+      "args": "",
+      "artwork": "tom_clancy_s_ghost_recon_advanced_warfighter.jpg"
+    },
+    {
+      "id": "mmikwvcs7hhw",
+      "title": "Tony Hawk's American Wasteland",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Tony Hawk's American Wasteland (USA, Europe) (En,Fr,De,Es,It).xiso.iso",
+      "args": "",
+      "artwork": "tony_hawk_s_american_wasteland.jpg"
+    },
+    {
+      "id": "mmikx7g3ywbi",
+      "title": "Tony Hawk's Underground",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Tony Hawk's Underground (USA).xiso.iso",
+      "args": "",
+      "artwork": "tony_hawk_s_underground.jpg"
+    },
+    {
+      "id": "mmikxjbc14d0",
+      "title": "Tony Hawk's Undergound 2",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Tony Hawk's Underground 2 (USA, Europe) (En,Fr,De).xiso.iso",
+      "args": "",
+      "artwork": "tony_hawk_s_undergound_2.jpg"
+    },
+    {
+      "id": "mmikxttqlcto",
+      "title": "SSX 3",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\SSX 3 (USA).xiso.iso",
+      "args": "",
+      "artwork": "ssx_3.jpg"
+    },
+    {
+      "id": "mmiky5y5rh8v",
+      "title": "SSX Tricky",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\SSX Tricky (USA).xiso.iso",
+      "args": "",
+      "artwork": "ssx_tricky.jpg"
+    },
+    {
+      "id": "mmil4se0tfqq",
+      "title": "Destroy All Humans!",
+      "console": "XBOX",
+      "path": "D:\\GAMES\\XBOX\\Destroy All Humans! (USA).xiso.iso",
+      "args": "",
+      "artwork": "destroy_all_humans_.jpg"
+    },
+    {
+      "id": "mmilhr0maptn",
+      "title": "Dark Souls 3",
+      "console": "STEAM_0d1",
+      "path": "D:\\SteamLibrary\\steamapps\\common\\DARK SOULS III\\Game\\DarkSoulsIII.exe",
+      "args": "",
+      "artwork": "dark_souls_3.jpg"
+    },
+    {
+      "id": "mmilukunquag",
+      "title": "Midnight Club Dub Edition Remix",
+      "console": "PS2",
+      "path": "D:\\GAMES\\PS2\\Midnight Club 3 - DUB Edition Remix (USA)(1)\\Midnight Club 3 - DUB Edition Remix (USA).iso",
+      "args": "",
+      "artwork": "midnight_club_dub_edition_remix.webp"
+    },
+    {
+      "id": "mmim4rg0daqf",
+      "title": "NBA Street Vol. 2",
+      "console": "PS2",
+      "path": "D:\\GAMES\\PS2\\NBA Street Vol. 2 (USA)\\NBA Street Vol. 2 (USA).iso",
+      "args": "",
+      "artwork": "nba_street_vol__2.webp",
+      "lastPlayedAt": 1773105071470
+    }
+  ],
+  "emulators": {
+    "PS3": "C:\\Users\\carte\\OneDrive\\Documents\\rpcs3-v0.0.37-18022-9c93ec0b_win64_msvc\\rpcs3.exe",
+    "XBOX360": "C:\\Users\\carte\\OneDrive\\Documents\\xenia_master\\xenia.exe",
+    "PS2": "C:\\Program Files\\PCSX2\\pcsx2-qt.exe"
+  },
+  "platforms": [
+    {
+      "id": "PS1",
+      "label": "PlayStation 1",
+      "color": "#0070cc",
+      "isIndirect": false
+    },
+    {
+      "id": "PS2",
+      "label": "PlayStation 2",
+      "color": "#003087",
+      "isIndirect": false
+    },
+    {
+      "id": "PS3",
+      "label": "PlayStation 3",
+      "color": "#00439c",
+      "isIndirect": false
+    },
+    {
+      "id": "XBOX",
+      "label": "Xbox",
+      "color": "#107c10",
+      "isIndirect": false
+    },
+    {
+      "id": "XBOX360",
+      "label": "Xbox 360",
+      "color": "#52b043",
+      "isIndirect": false
+    },
+    {
+      "id": "INDIE",
+      "label": "Indie Games",
+      "color": "#e05cff",
+      "isIndirect": true
+    },
+    {
+      "id": "STEAM_0d1",
+      "label": "Steam",
+      "color": "#00d4ff",
+      "isIndirect": true
+    }
+  ],
+  "parentalBlockedIds": [
+    "mmifl67vdnu7",
+    "mmifpi3336if",
+    "mmifyfcyntol",
+    "mmijyrv2d5x2",
+    "mmikggn2cc4i",
+    "mmikoj6t821g",
+    "mmikoxpfgiam",
+    "mmikp73fv399",
+    "mmikphdvpbx5",
+    "mmikq3b4prhj",
+    "mmikqhuamhpr",
+    "mmiksv7to2m0",
+    "mmikta8r2r1w",
+    "mmiktnhlscge",
+    "mmiku0ne9slv",
+    "mmikuh5u4op9",
+    "mmikurhg7m3b",
+    "mmikvmf55mbi",
+    "mmikw0m9dsta",
+    "mmikwizwee2j",
+    "mmil4se0tfqq",
+    "mmilukunquag",
+    "mmim4rg0daqf"
+  ],
+  "parentalAdminPin": "1111"
+}
