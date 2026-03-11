@@ -8,6 +8,12 @@ Retro Launcher is a local desktop game launcher for retro and PC games. It lets 
 
 The app is built with **Electron** (main process + preload bridge) and a **vanilla HTML/CSS/JS** renderer — no front-end framework. Config lives in `games.json`; themes and user mode use `localStorage`. Build the standalone `.exe` with the included batch file or `npm run build`.
 
+**Notable Features**
+- Support for all emulators
+- Parental controls to allow usage with children
+- Xbox/Playstation controller support (control the launcher via a controller)
+- UI Themes
+
 ---
 
 ## Installation
