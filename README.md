@@ -12,6 +12,8 @@ TO INSTALL: Run the **BATCH file** (BUILD_ME_FIRST) on your computer and type "R
 
 ![Launcher Interface](screenshots/launcher-interface.png)
 
+---
+
 **Notable Features**
 - Support for all emulators and platforms
 - Parental controls to allow usage with children and kids
@@ -25,7 +27,7 @@ Click Add Game to open the game interace.
 - Choose the platform
 - Select the game file path (usually a .iso / disc image file) # ORGANIZE YOUR GAME LIBRARY TO MAKE THIS PART EASY
 - Select artwork (find these online and download them into 'retro-launcher-v3\retro-launcher\artwork\{PS1,PS2,PS3,XBOX,XBOX360}'
-- 
+
 ![Add Games](screenshots/retro-launcher-add-game.png)
 
 **Manage Platforms / Emulators**
